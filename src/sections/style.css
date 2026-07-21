@@ -310,7 +310,7 @@
 .agenda-time {
   font-size: 13px;
   font-weight: 700;
-  color: var(--volcano);
+  color: var(--white);
   padding-top: 4px;
   text-align: right;
 }
@@ -332,12 +332,10 @@
 .agenda-connector {
   width: 2px;
   flex: 1;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.5);
   margin-top: 8px;
 }
-.agenda-item:last-child .agenda-connector {
-  display: none;
-}
+
 .agenda-content {
   padding-top: 2px;
 }

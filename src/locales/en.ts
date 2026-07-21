@@ -93,5 +93,13 @@ export default {
       secondary:
         "I consent to the use of my registration information for event planning and communication purposes related to this event.",
     },
+    btn: {
+      submit: {
+        label: "Submit",
+      },
+      add_guest: {
+        label: "Add a Second Guest",
+      },
+    },
   },
 };

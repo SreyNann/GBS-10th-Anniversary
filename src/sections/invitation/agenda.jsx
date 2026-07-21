@@ -14,7 +14,7 @@ const Agenda = () => {
       }}
     >
       <div className="section-header reveal">
-        <h2 style={{ color: "var(--volcano)" }}>Agenda</h2>
+        <h2 style={{ color: "var(--white)" }}>Agenda</h2>
         {/* <p>A carefully curated day designed to deepen our connections.</p> */}
       </div>
       <div className="agenda-grid">
@@ -94,7 +94,7 @@ const Agenda = () => {
           </div>
         </div>
         <div className="agenda-item reveal" style={{ transitionDelay: "0.5s" }}>
-          <div className="agenda-time">20:00</div>
+          <div className="agenda-time">21:00</div>
           <div style={{ display: "flex" }}>
             <div className="agenda-line">
               {/* <div

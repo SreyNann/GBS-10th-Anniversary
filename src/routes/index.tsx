@@ -9,6 +9,10 @@ export const dashboardRoutes = [
     element: <Invitation />,
   },
   {
+    path: "/vip",
+    element: <Invitation />,
+  },
+  {
     path: "/admin/dashboard",
     element: <Dashboard />,
   },
