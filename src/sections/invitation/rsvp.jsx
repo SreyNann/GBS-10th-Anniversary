@@ -1,9 +1,14 @@
 import React from "react";
 import { useLanguage } from "../../context/language";
 import { addGuest2, removeGuest2, submitRSVP } from "../../utils/script";
+import { useLocation } from "react-router-dom";
 
 const RSVP = () => {
   const { t } = useLanguage();
+  const location = useLocation();
+
+  const isVip = location.pathname.includes("/vip");
+
   return (
     <section className="rsvp-section" id="rsvp">
       <div className="rsvp-card reveal">
@@ -142,9 +147,12 @@ const RSVP = () => {
               style={{ display: "none" }}
             />
           </div>
-          <button className="add-guest-btn" id="add-btn" onClick={addGuest2}>
-            ＋ Add a Second Guest
-          </button>
+
+          {isVip && (
+            <button className="add-guest-btn" id="add-btn" onClick={addGuest2}>
+              ＋ {t.rsvp.btn.add_guest.label}
+            </button>
+          )}
 
           <div className="form-group">
             <label className="form-label">
@@ -179,7 +187,7 @@ const RSVP = () => {
           </div>
 
           <button className="submit-btn" onClick={submitRSVP}>
-            Confirm RSVP →
+            {t.rsvp.btn.submit.label} →
           </button>
         </div>
 
