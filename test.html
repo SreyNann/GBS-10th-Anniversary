@@ -1,0 +1,87 @@
+<div
+  style="
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fbfbfb;
+    padding: 40px 20px;
+  "
+>
+  <div
+    style="
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+    "
+  >
+    <div
+      style="
+        background: #e80005;
+        color: #fff;
+        text-align: center;
+        padding: 36px;
+      "
+    >
+      <h1 style="margin: 0; font-size: 28px">GBS 10th Anniversary</h1>
+
+      <p style="color: #fbfbfb; margin-top: 10px">
+        Celebration Event RSVP Confirmation
+      </p>
+    </div>
+
+    <div style="padding: 36px">
+      <h2 style="color: #e80005">Thank You for Your RSVP!</h2>
+
+      <p>Dear <strong>${data.g1name}</strong>,</p>
+
+      <p style="line-height: 1.6">
+        We have successfully received your RSVP for the
+        <strong>GBS 10th Anniversary Celebration</strong>.
+      </p>
+
+      <div
+        style="
+          background: #fbfbfb;
+          border-left: 4px solid #282a30;
+          padding: 20px;
+          border-radius: 8px;
+        "
+      >
+        <table width="100%">
+          <tr>
+            <td><strong>Company</strong></td>
+            <td align="right">${data.business}</td>
+          </tr>
+
+          <tr>
+            <td><strong>Attendance</strong></td>
+            <td align="right">${data.attendance}</td>
+          </tr>
+
+          <tr>
+            <td><strong>Guests</strong></td>
+            <td align="right">${data.guest}</td>
+          </tr>
+        </table>
+      </div>
+
+      <p style="text-align: center; margin-top: 30px">
+        ${ data.attendance === "Attending" ? "We look forward to celebrating
+        with you!" : "Thank you for letting us know. We hope to see you at a
+        future event." }
+      </p>
+    </div>
+
+    <div
+      style="
+        background: #e80005;
+        color: #fff;
+        text-align: center;
+        padding: 24px;
+      "
+    >
+      Best regards,<br />
+      <strong style="color: #fbfbfb"> GBS Team </strong>
+    </div>
+  </div>
+</div>
