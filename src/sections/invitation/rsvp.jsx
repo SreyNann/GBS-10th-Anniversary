@@ -193,7 +193,7 @@ const RSVP = () => {
 
         <div className="success-msg" id="success-msg">
           <div className="success-icon">🎉</div>
-          <h3>You're confirmed!</h3>
+          <h3>Your response has been recorded!</h3>
           <p>
             Thanks <strong id="cname"></strong>, your RSVP is received.
             <br />
